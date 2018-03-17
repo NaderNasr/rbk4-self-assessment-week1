@@ -10,6 +10,11 @@ var makeHashTable = function() {
 
       insert: function(key, value) {
         //your code is here
+        //insert or add key and value into hash table.
+
+        var Object.create(obj)
+
+        this._storage.push(obj)
         this._storage[hashFn(key, max)] = value;
     }
   }

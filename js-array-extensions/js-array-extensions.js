@@ -2,28 +2,18 @@
 //retrieve the fist and last elements in the array
 //extension
 
-var arr = []
+// var arr = []
+// var this.first = arr[0]
+// var this.last = arr[arr.length - 1]
+// function extndArr (){
 
-var this.first = arr[0]
-var this.last = arr[arr.length - 1]
+Array.prototype.first = function (){
 
-function extndArr (){
-
-  var first = function (){
-
-    return this.first
-
-  }
-
-  var last = function(){
-    return this.last
-  }
-
-
-
-
-
-  return arr
-
-
+  return this[0]
 }
+
+Array.prototype.last = function(){
+  return this[this.length - 1]
+}
+  //return arr
+// }
